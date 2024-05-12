@@ -22,19 +22,29 @@ return {
   {
     "kdheepak/lazygit.nvim",
     cmd = {
-    		"LazyGit",
-    		"LazyGitConfig",
-    		"LazyGitCurrentFile",
-    		"LazyGitFilter",
-    		"LazyGitFilterCurrentFile",
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
     },
     keys = {
            { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     },
   },
-  --   config = function()
-  --   end,
-  -- -- {
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  		 "vim", "lua", "vimdoc",
+       "html", "css","go","rust",
+       "typescript", "javascript", "svelte",
+        "gdscript", "godot_resource", "gdshader"
+  		},
+  	},
+ },
+  -- {
+  --
   -- 	"williamboman/mason.nvim",
   -- 	opts = {
   -- 		ensure_installed = {
@@ -43,16 +53,4 @@ return {
   -- 		},
   -- 	},
   -- },
-  --
-  {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  		 "vim", "lua", "vimdoc",
-       "html","dart", "css","go","rust",
-       -- "gleam" 
-       "typescript", "javascript", "svelte"
-  		},
-  	},
-  }
 }

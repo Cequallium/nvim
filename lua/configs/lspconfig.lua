@@ -11,10 +11,9 @@ local servers = {
   "svelte",
   "pyright",
   "emmet_language_server",
-  "gleam",
   "nixd",
   "markdown_oxide",
-  "julials",
+  "gdscript"
 }
 
 -- lsps with default config
