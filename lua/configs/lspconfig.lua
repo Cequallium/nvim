@@ -7,13 +7,12 @@ local servers = {
   "html",
   "cssls",
   "gopls",
-  "dartls",
   "svelte",
   "pyright",
   "emmet_language_server",
   "nixd",
   "markdown_oxide",
-  "gdscript"
+  "gdscript",
 }
 
 -- lsps with default config

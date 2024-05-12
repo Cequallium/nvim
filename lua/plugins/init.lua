@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -29,20 +29,29 @@ return {
       "LazyGitFilterCurrentFile",
     },
     keys = {
-           { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
   },
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  		 "vim", "lua", "vimdoc",
-       "html", "css","go","rust",
-       "typescript", "javascript", "svelte",
-        "gdscript", "godot_resource", "gdshader"
-  		},
-  	},
- },
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "go",
+        "rust",
+        "typescript",
+        "javascript",
+        "svelte",
+        "gdscript",
+        "godot_resource",
+        "gdshader",
+      },
+    },
+  },
   -- {
   --
   -- 	"williamboman/mason.nvim",
