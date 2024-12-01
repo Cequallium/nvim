@@ -1,8 +1,15 @@
-require "nvchad.options"
+-- require "nvchad.options"
 
--- add yours here!
-
+local opt = vim.opt
 local o = vim.o
-local wo = vim.wo
-o.cursorlineopt = "both" -- to enable cursorline!
-wo.relativenumber = true
+local g = vim.g
+
+-------------------------------------- options ------------------------------------------
+
+o.cul = true
+
+-- Numbers
+o.ruler = true
+o.relativenumber = true
+o.shell = "zsh"
+
